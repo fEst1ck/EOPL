@@ -1,0 +1,5 @@
+#lang racket
+(define invert
+  (lambda (lst)
+    (map (lambda (2-lst) `(,(cdr 2-lst) ,(car 2-lst)))
+         lst)))

@@ -1,0 +1,12 @@
+#lang eopl
+;; return the Cartesian product of singleton {e} and set s
+;; note e represents an element
+(define product-helper
+  (lambda (e s)
+    (foldl (lambda (new acc) (cons `(,e ,new) acc))
+           '()
+           s)))
+    
+(define product
+  (lambda (sos1 sos2)
+    
