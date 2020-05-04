@@ -1,0 +1,7 @@
+#lang eopl
+(define-datatype Env Env?
+  (empty-env)
+  (extend-env
+   (id symbol?)
+   (val (lambda () #t))
+   (parent-env Env?)))
